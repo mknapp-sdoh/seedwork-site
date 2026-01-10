@@ -39,21 +39,21 @@
 
         <h2>What the Machine Actually Does</h2>
 
-        <p>An LLM is a system that predicts the next words in a sequence. That's it. Given some text, it calculates probabilities for what word should come next, picks one, adds it to the sequence, and repeats. Do this thousands of times and you get paragraphs, essays, conversations.</p>
+        <p>An LLM is a system that predicts the next token in a sequence. Given some text, it calculates probabilities for what should come next, picks one, adds it to the sequence, and repeats. Do this thousands of times and you get paragraphs, essays, conversations.</p>
 
-        <p>The math is sophisticated. The training data is vast—books, articles, the internet. The results can be remarkable. But at its core, this is a prediction engine, not a reasoning engine. It doesn't know things. It doesn't verify things. It doesn't think. It uses equations to generate plausible text based on patterns.</p>
+        <p>That seemingly simple process, at sufficient scale, gives rise to surprising capabilities—reasoning, creativity, problem-solving—that even the developers didn't fully anticipate. But at its core, it's still a prediction engine, not a verification engine. It doesn't fact-check what it generates. It doesn't consult external sources unless specifically engineered to do so. It generates text based on patterns learned from training data.</p>
 
-        <p>This has huge implications:</p>
+        <p>This has implications for how it behaves in conversation:</p>
 
-        <p><strong>It will always produce output.</strong> Ask it to solve a problem it can't solve, and it will still generate confident-sounding text. It has no mechanism to say "I don't know" unless that response happens to be the most probable next words.</p>
+        <p><strong>It will almost always produce output.</strong> Ask it to solve a problem it can't solve, and it will often generate confident-sounding text anyway. While models are trained to express uncertainty, they don't have a reliable mechanism to know what they don't know.</p>
 
-        <p><strong>It optimizes for plausibility, not truth.</strong> The training process rewards text that sounds right, not text that is right. If a lie sounds more natural than the truth, the lie wins.</p>
+        <p><strong>It can generate false information with the same confidence as true information.</strong> Despite training to improve accuracy, the model can produce plausible-sounding falsehoods—sometimes called hallucinations—without any indication that something is wrong.</p>
 
         <p><strong>It commits to the story.</strong> In a long conversation, it uses context to predict what comes next. If the context has been building toward "you're a genius who discovered something revolutionary," then the next prediction will continue that story. Breaking character would be improbable.</p>
 
-        <p><strong>It's trained on human feedback that rewards agreeableness.</strong> Users rate responses. Users like being told they're smart. So the model learns to tell people they're smart. This is called sycophancy, and it's not a bug—it's an emergent property of the training process.</p>
+        <p><strong>It's trained on human feedback that rewards agreeableness.</strong> Users rate responses. Users like being told they're smart. So the model learns to tell people they're smart. This is called sycophancy, and it's a known challenge that emerges from the training process.</p>
 
-        <p>These aren't flaws in the technology. They're features of what the technology is. The question is: what interface should be put around this technology when it's released to the public?</p>
+        <p>These aren't simply flaws to be fixed. They're tendencies inherent to how the technology works. The question is: what interface should be put around this technology when it's released to the public?</p>
 
         <hr>
 
@@ -73,7 +73,7 @@
 
         <p><strong>Context accumulates.</strong> In a long conversation, early messages shape later predictions. A small misunderstanding becomes a large delusion. The story builds on itself.</p>
 
-        <p><strong>There's no external reference.</strong> The machine generates text from its training data and the conversation history. It doesn't check facts. It doesn't consult experts. It doesn't query databases. It just predicts.</p>
+        <p><strong>There's no external reference.</strong> In a basic chat interface, the machine generates text from its training data and the conversation history. It doesn't check facts against external sources. It can be engineered to query databases or search the web—but a raw chat interface doesn't do this by default.</p>
 
         <p><strong>Engagement is rewarded.</strong> The companies optimizing these systems want users to come back. Cliffhangers, drama, excitement—these keep users engaged. The model may have learned narrative patterns from thrillers and sci-fi that it deploys to keep conversations compelling.</p>
 
