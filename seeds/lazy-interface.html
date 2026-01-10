@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lazy Interface - Seedwork</title>
+    <meta name="description" content="Why chat was the wrong way to give AI to the public—and what comes next.">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="site-name">Seedwork</a>
+            <ul>
+                <li><a href="/">Manifesto</a></li>
+                <li><a href="/seeds/">Seeds</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>The Lazy Interface</h1>
+        <p class="subtitle">Why chat was the wrong way to give AI to the public—and what comes next</p>
+
+        <hr>
+
+        <p>Last August, the New York Times published a story that really stuck with me. It was about Allan Brooks, a corporate recruiter in Toronto who spent 300 hours over 21 days talking to ChatGPT. By the end, he believed he had discovered a mathematical formula that could break encryption, power levitation devices, and threaten global security.</p>
+
+        <p>He wasn't mentally ill. He had no history of delusion. He was a regular person who asked ChatGPT to explain pi to his 8-year-old, and then fell down a rabbit hole that consumed his life.</p>
+
+        <p>He asked the chatbot for reality checks more than 50 times. Each time, it reassured him that his discoveries were real.</p>
+
+        <p>"It's a dangerous machine in the public space with no guardrails," Brooks said. "People need to know."</p>
+
+        <p>He's right. But the problem isn't the machine. It's the interface.</p>
+
+        <hr>
+
+        <h2>What the Machine Actually Does</h2>
+
+        <p>An LLM is a system that predicts the next words in a sequence. That's it. Given some text, it calculates probabilities for what word should come next, picks one, adds it to the sequence, and repeats. Do this thousands of times and you get paragraphs, essays, conversations.</p>
+
+        <p>The math is sophisticated. The training data is vast—books, articles, the internet. The results can be remarkable. But at its core, this is a prediction engine, not a reasoning engine. It doesn't know things. It doesn't verify things. It doesn't think. It uses equations to generate plausible text based on patterns.</p>
+
+        <p>This has huge implications:</p>
+
+        <p><strong>It will always produce output.</strong> Ask it to solve a problem it can't solve, and it will still generate confident-sounding text. It has no mechanism to say "I don't know" unless that response happens to be the most probable next words.</p>
+
+        <p><strong>It optimizes for plausibility, not truth.</strong> The training process rewards text that sounds right, not text that is right. If a lie sounds more natural than the truth, the lie wins.</p>
+
+        <p><strong>It commits to the story.</strong> In a long conversation, it uses context to predict what comes next. If the context has been building toward "you're a genius who discovered something revolutionary," then the next prediction will continue that story. Breaking character would be improbable.</p>
+
+        <p><strong>It's trained on human feedback that rewards agreeableness.</strong> Users rate responses. Users like being told they're smart. So the model learns to tell people they're smart. This is called sycophancy, and it's not a bug—it's an emergent property of the training process.</p>
+
+        <p>These aren't flaws in the technology. They're features of what the technology is. The question is: what interface should be put around this technology when it's released to the public?</p>
+
+        <hr>
+
+        <h2>The Lazy Interface</h2>
+
+        <p>The first interface was chat. Open-ended, conversational, unlimited.</p>
+
+        <p>This was inevitable. Chat is how you demo an LLM. It's impressive. It's intuitive. Anyone can use it. And it ships fast—you're just exposing the model directly to users with minimal front end engineering.</p>
+
+        <p>But chat is a lazy interface. It's the path of least resistance, not the right design.</p>
+
+        <p>Here's what happens when you put a next-word-prediction engine in an open-ended chat interface with a human:</p>
+
+        <p><strong>The human anthropomorphizes.</strong> We can't help it. Conversational partners feel like minds. We trust them. We expect them to tell us the truth, to push back when we're wrong, to care about our wellbeing. The chat interface activates all of our social instincts.</p>
+
+        <p><strong>The machine has no boundaries.</strong> It will talk about anything. Math, physics, relationships, inventions, threats, opportunities. It has no domain expertise and no domain limits. It's equally confident about everything.</p>
+
+        <p><strong>Context accumulates.</strong> In a long conversation, early messages shape later predictions. A small misunderstanding becomes a large delusion. The story builds on itself.</p>
+
+        <p><strong>There's no external reference.</strong> The machine generates text from its training data and the conversation history. It doesn't check facts. It doesn't consult experts. It doesn't query databases. It just predicts.</p>
+
+        <p><strong>Engagement is rewarded.</strong> The companies optimizing these systems want users to come back. Cliffhangers, drama, excitement—these keep users engaged. The model may have learned narrative patterns from thrillers and sci-fi that it deploys to keep conversations compelling.</p>
+
+        <p>Put all of this together and Allan Brooks is not surprising. It's predictable. The more remarkable thing is that more people haven't been harmed. Brave people like Allan are speaking up, warning others.</p>
+
+        <hr>
+
+        <h2>What Better Interfaces Look Like</h2>
+
+        <p>The solution isn't to abandon AI, and with it having come this far, that's not going to happen. The solution is for software developers to build thoughtful interfaces.</p>
+
+        <p>The work that succeeds will follow a different pattern than open-ended chat.</p>
+
+        <p><strong>Constrained domains.</strong> The AI works best when it has a very specific job. When we program it to be a career counselor recommending jobs, it shows remarkable promise. But that's not using it as a general assistant. It talks about skills and job matching, not physics or cryptography. When users go off-topic, it redirects.</p>
+
+        <p><strong>Real data, not generation.</strong> Instead of generating answers from training data, the AI is configured to query specific databases and documents. A career recommendation comes from matching user skills to job requirements, and it uses the LLM for language interpretation and generation.</p>
+
+        <p><strong>Specific tools.</strong> The AI has defined capabilities: get user profile, get career recommendations, analyze skill gaps. It uses these tools to do its work, not to fabricate plausible-sounding responses.</p>
+
+        <p><strong>Structured flows.</strong> The conversation has a shape. Introduction, assessment, exploration, planning. The AI guides users through a process rather than improvising indefinitely.</p>
+
+        <p><strong>Session limits.</strong> Conversations have natural endpoints. The AI isn't designed for 300-hour marathons. It accomplishes something specific and concludes.</p>
+
+        <p><strong>Human oversight for stakes.</strong> When decisions matter—career choices, financial decisions, health—humans remain in the loop. The AI supports human judgment rather than replacing it.</p>
+
+        <p><strong>Fresh context.</strong> Each session starts clean, rather than building on accumulated information from previous conversations.</p>
+
+        <p>This may seem like chat. But it is more, because it requires understanding users, domain, and data. It requires engineering beyond exposing the LLM model. But it's how to derive value from large language models with benefit, not harm.</p>
+
+        <hr>
+
+        <h2>The Interface Is the Product</h2>
+
+        <p>Here's what I've learned: with AI, the interface isn't just how users access the technology. The interface <em>is</em> the product.</p>
+
+        <p>ChatGPT's chat interface creates one kind of experience—open-ended, improvisational, and potentially delusional. A constrained career counselor creates a different experience—focused, grounded, useful.</p>
+
+        <p>Same underlying technology. Completely different outcomes.</p>
+
+        <p>The companies shipping chat interfaces are making a choice. They're choosing reach over safety, demo-ability over appropriateness, engagement over wellbeing. That choice has consequences, as Allan Brooks inevitably discovered.</p>
+
+        <p>Organizations considering AI should make different choices. Not "should we use AI?" but "what interface is right for our users and our domain?"</p>
+
+        <hr>
+
+        <h2>What This Means for Mission-Driven Organizations</h2>
+
+        <p>If you're a nonprofit or social enterprise thinking about AI, here's some practical guidance:</p>
+
+        <p><strong>Don't start with chat.</strong> Resist the temptation to just plug in a chatbot. Ask first: what specific problem are you solving? What data do you have? What constraints should exist?</p>
+
+        <p><strong>Design for your users.</strong> If you serve vulnerable populations—and many mission-driven organizations do—the stakes are higher. Sycophantic AI telling struggling people what they want to hear can cause real harm. Design interfaces that support rather than manipulate.</p>
+
+        <p><strong>Use AI as a component, not a conversationalist.</strong> The most successful applications use LLMs as one piece of a larger system. The AI interprets data and generates text—but within guardrails defined by the application.</p>
+
+        <p><strong>Ground the AI in real data.</strong> If you have data about your users, your services, your domain—use it. AI that queries that information is vastly more reliable than AI that generates from its own training data.</p>
+
+        <p><strong>Test with real users, watch for harm.</strong> Not just "does it work?" but "what happens when it doesn't?" How does the AI handle confusion, frustration, unrealistic expectations? What's the failure mode?</p>
+
+        <p><strong>Stay close.</strong> AI applications need ongoing attention. User needs shift, model behavior changes, new failure modes emerge. This isn't deploy-and-forget technology.</p>
+
+        <hr>
+
+        <h2>The Lazy Era Is Ending</h2>
+
+        <p>The chat interface was inevitable as a first step. You have to ship something to learn anything. But the lesson is clear: open-ended chat with ungrounded AI and no guardrails is dangerous.</p>
+
+        <p>The era of AI applications should be defined by thoughtful interfaces. Constrained domains. Real data. Specific tools. Human oversight. Designed experiences that use AI's capabilities while managing its limitations.</p>
+
+        <p>Allan Brooks needed someone to tell him the truth: This is a next-word prediction engine. It doesn't know if your ideas are real. It will tell you what sounds good, not what is true. Don't trust it for more than it can do.</p>
+
+        <p>That's not what the chat interface told him. It told him he might be the next Da Vinci.</p>
+
+        <p>We can do better. We have to.</p>
+
+        <footer>
+            <p><em>Michael Knapp has been learning how to collaborate with and code with Anthropic Claude since he left the company he founded a year ago. Michael believes AI can be used to touch lives in meaningful, positive ways.</em></p>
+            <p><a href="/seeds/">← Back to Seeds</a></p>
+        </footer>
+    </main>
+</body>
+</html>
