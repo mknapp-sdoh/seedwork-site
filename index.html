@@ -3,22 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seedwork</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 { color: #2d5016; }
-    </style>
+    <title>Seedwork - A Methodology for Building with LLMs</title>
+    <meta name="description" content="Seedwork replaces the construction metaphor with cultivation. A methodology for building software with Large Language Models.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Seedwork</h1>
-    <p>A methodology for building software with Large Language Models.</p>
-    <p><em>Coming soon.</em></p>
+    <nav>
+        <div class="container">
+            <a href="/" class="site-name">Seedwork</a>
+            <ul>
+                <li><a href="/">Manifesto</a></li>
+                <li><a href="/seeds/">Seeds</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>The Seedwork Manifesto</h1>
+        <p class="subtitle">For building software with Large Language Models</p>
+
+        <p>Unlike the software development paradigms that preceded it, building software with Large Language Models is not construction. It is cultivation.</p>
+
+        <p><strong>Values:</strong></p>
+
+        <ul class="values">
+            <li><strong>Emergent capabilities</strong> over specified requirements</li>
+            <li><strong>Cultivation</strong> over construction</li>
+            <li><strong>Discovery through use</strong> over upfront design</li>
+            <li><strong>Native strengths</strong> over forced behaviors</li>
+        </ul>
+
+        <p>That is, while there is value in the items on the right, the items on the left matter more.</p>
+
+        <hr>
+
+        <h2>Principles behind the Seedwork Manifesto</h2>
+
+        <p><strong>1.</strong> The highest priority is to discover and cultivate the unexpected value that emerges when AI meets real problems.</p>
+
+        <p><strong>2.</strong> Welcome non-determinism as a feature, not a bug. The same prompt yielding different responses is what makes the system valuable.</p>
+
+        <p><strong>3.</strong> Ship to real users early and often. Emergent capabilities cannot be discovered in a sandbox.</p>
+
+        <p><strong>4.</strong> The most powerful applications emerge when working with the grain of what language models naturally do well, not against it.</p>
+
+        <p><strong>5.</strong> Build the minimum scaffolding necessary. The intelligence is in the model; the job is to connect it to context and action.</p>
+
+        <p><strong>6.</strong> Prompts are conversations, not specifications. They evolve through dialogue with the system, not upfront design.</p>
+
+        <p><strong>7.</strong> Discovery is the primary measure of progress. "It also does this" is more valuable than "it does exactly what was specified."</p>
+
+        <p><strong>8.</strong> Trust the model's latent capabilities. The potential exists before finding it—the work is exploration, not creation.</p>
+
+        <p><strong>9.</strong> Evaluate outcomes in context, not against fixed metrics. Success often looks different than expected.</p>
+
+        <p><strong>10.</strong> Simplicity—the art of removing code between the model and the problem—is essential.</p>
+
+        <p><strong>11.</strong> The best AI applications emerge from rapid experimentation, real-world feedback, and willingness to be surprised.</p>
+
+        <p><strong>12.</strong> At regular intervals, ask: "What is this system doing that wasn't planned for?" Then cultivate the valuable surprises and prune the rest.</p>
+
+        <hr>
+
+        <h2>Why "Seedwork"</h2>
+
+        <p>A seed contains latent potential. A plant is not built—conditions for growth are provided. Native species thrive in their environment when worked with, not against. What emerges has a life of its own.</p>
+
+        <p>Large language models are similar. The capabilities exist in the weights before a line of code is written. The work is cultivation: providing the right context, the right tools, the right connection to real problems. And like gardening, there must be willingness to be surprised by what grows.</p>
+
+        <p>Seedwork replaces the construction metaphor (building, architecting, engineering) with a cultivation metaphor (planting, nurturing, discovering, pruning).</p>
+
+        <hr>
+
+        <h2>The Three Eras</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Era</th>
+                    <th>Metaphor</th>
+                    <th>Core Assumption</th>
+                    <th>Methodology</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Waterfall</strong></td>
+                    <td>Blueprint</td>
+                    <td>Everything can be known upfront</td>
+                    <td>Specify → Build → Test</td>
+                </tr>
+                <tr>
+                    <td><strong>Agile</strong></td>
+                    <td>Iteration</td>
+                    <td>Requirements change; systems don't</td>
+                    <td>Iterate → Ship → Learn</td>
+                </tr>
+                <tr>
+                    <td><strong>Seedwork</strong></td>
+                    <td>Cultivation</td>
+                    <td>The system has latent capabilities to discover</td>
+                    <td>Plant → Cultivate → Discover → Prune</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>What Seedwork Means in Practice</h2>
+
+        <div class="contrast">
+            <p><strong>Instead of:</strong> Writing detailed specifications for AI behavior</p>
+            <p><strong>Try:</strong> Quick experiments to discover what the model naturally does well</p>
+        </div>
+
+        <div class="contrast">
+            <p><strong>Instead of:</strong> Extensive upfront prompt engineering</p>
+            <p><strong>Try:</strong> Shipping early and evolving prompts through real-world feedback</p>
+        </div>
+
+        <div class="contrast">
+            <p><strong>Instead of:</strong> Treating unexpected outputs as bugs</p>
+            <p><strong>Try:</strong> Asking "Is this actually valuable?" before calling it a problem</p>
+        </div>
+
+        <div class="contrast">
+            <p><strong>Instead of:</strong> Measuring success against predetermined metrics</p>
+            <p><strong>Try:</strong> Watching for emergent value and updating the definition of success</p>
+        </div>
+
+        <div class="contrast">
+            <p><strong>Instead of:</strong> Building complex orchestration around AI</p>
+            <p><strong>Try:</strong> Minimal scaffolding that connects the model to real context and real action</p>
+        </div>
+
+        <footer>
+            <p><em>Seedwork Manifesto, December 2024</em><br>
+            Initial articulation by Claude (Anthropic), in collaboration with <a href="/about.html">Michael Knapp</a></p>
+        </footer>
+    </main>
 </body>
 </html>
