@@ -39,7 +39,7 @@
 
         <h2>What the Machine Actually Does</h2>
 
-        <p>An LLM is a system that predicts the next token in a sequence. Given some text, it calculates probabilities for what should come next, picks one, adds it to the sequence, and repeats. Do this thousands of times and you get paragraphs, essays, conversations.</p>
+        <p>A Large Language Model (LLM) is a system that predicts the next token in a sequence. Given some text, it calculates probabilities for what should come next, picks one, adds it to the sequence, and repeats. Do this thousands of times and you get paragraphs, essays, conversations.</p>
 
         <p>That seemingly simple process, at sufficient scale, gives rise to surprising capabilities—reasoning, creativity, problem-solving—that even the developers didn't fully anticipate. But at its core, it's still a prediction engine, not a verification engine. It doesn't fact-check what it generates. It doesn't consult external sources unless specifically engineered to do so. It generates text based on patterns learned from training data.</p>
 
@@ -87,9 +87,9 @@
 
         <p>The solution isn't to abandon AI, and with it having come this far, that's not going to happen. The solution is for software developers to build thoughtful interfaces.</p>
 
-        <p>The work that succeeds will follow a different pattern than open-ended chat. I've been building Skilllab, an AI-powered career counselor, and the patterns that make it work are instructive.</p>
+        <p>The work that succeeds will follow a different pattern than open-ended chat. I collaborated on a prototype AI career counselor for Skilllab, and the patterns that make it work are instructive.</p>
 
-        <p><strong>Constrained domains.</strong> The AI works best when it has a specific job. Skilllab shows remarkable promise as a career counselor—but only because the application limits what it will discuss. It talks about skills and job matching. When users go off-topic, it redirects rather than improvising about things outside its domain.</p>
+        <p><strong>Constrained domains.</strong> The AI works best when it has a specific job. The prototype shows remarkable promise—but only because the application limits what it will discuss. It talks about skills and job matching. When users go off-topic, it redirects rather than improvising about things outside its domain.</p>
 
         <p><strong>Real data, not generation.</strong> Instead of generating answers from training data, the AI is configured to query specific databases and documents. A career recommendation comes from matching user skills to job requirements, and it uses the LLM for language interpretation and generation.</p>
 
